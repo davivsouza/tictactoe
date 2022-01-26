@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="shortcut icon" href="./assets/Luffy.png" type="image/png">
+    <title>Tic Tac Toe </title>
+  </head>
+  <body>
+    <div id="container">
+      <div id="players">
+        <h3>P1: <img src="./assets/zoro.png" alt="Player 1 - Zoro" /></h3>
+        <h3>P2: <img src="./assets/luffy.png" alt="Player 2 - Luffy" /></h3>
+      </div>
+
+      <div id="game">
+        <div id="stage">
+          <div id="0" class="square"></div>
+          <div id="1" class="square"></div>
+          <div id="2" class="square"></div>
+        </div>
+        <div id="stage2">
+          <div id="3" class="square"></div>
+          <div id="4" class="square"></div>
+          <div id="5" class="square"></div>
+        </div>
+        <div id="stage3">
+          <div id="6" class="square"></div>
+          <div id="7" class="square"></div>
+          <div id="8" class="square"></div>
+        </div>
+        <div id="reload-container">
+          <button id="reload-button"onclick="reload()">
+            Reiniciar
+          </button>
+        </div>
+      </div>
+      
+    </div>
+    <div id="gameover">
+      <div id="gameover-content">
+        <h1>Fim de Jogo!</h1>
+        <div id="winner-field">
+          
+        </div>
+        <h3>Foi o Vencedor!</h3>
+          <button class="reload" onclick="reload()">Jogar de novo</button>
+      </div>
+    </div>
+    <script src="./scripts/game.js"></script>
+    <script src="./scripts/interface.js"></script>
+  </body>
+</html>
